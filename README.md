@@ -18,29 +18,29 @@
 
 # 1 服务器分布
 > Production
-### 1. 10.174.139.190/139.196.14.184（GHLM-TA-PRO-01）
-#### servers/tomcat8_ta1/ -> async_trans/cgweb/fe_agent
-#### servers/tomcat8_ta2/ -> async_trans/cgweb/fe_agent
-#### servers/tomcat8_monkey/ -> monkey_kk
-#### servers/tomcat8_paynotify/ -> paynotify
-### 2. 10.46.25.86/139.196.108.253（GHLM-TA-PRO-02）
-#### servers/tomcat8_paynotify1/ -> paynotify
-#### servers/tomcat8_paynotify2/ -> paynotify
-#### servers/tomcat8_ta/ -> async_trans/cgweb/fe_agent
-### 3. 10.46.27.37/139.196.108.39（GHLM测试和生产中台）
-### servers/tomcat8_production/ -> bigtail/pm/ps
+* 1. 10.174.139.190/139.196.14.184（GHLM-TA-PRO-01）
+servers/tomcat8_ta1/ -> async_trans/cgweb/fe_agent
+servers/tomcat8_ta2/ -> async_trans/cgweb/fe_agent
+servers/tomcat8_monkey/ -> monkey_kk
+servers/tomcat8_paynotify/ -> paynotify
+* 2. 10.46.25.86/139.196.108.253（GHLM-TA-PRO-02）
+servers/tomcat8_paynotify1/ -> paynotify
+servers/tomcat8_paynotify2/ -> paynotify
+servers/tomcat8_ta/ -> async_trans/cgweb/fe_agent
+* 3. 10.46.27.37/139.196.108.39（GHLM测试和生产中台）
+servers/tomcat8_production/ -> bigtail/pm/ps
 
 
 > Stage
-### 10.47.182.119/139.196.205.202（ta-stage-log）
-#### servers/tomcat8_stage_paynotify/ -> paynotify
-#### servers/tomcat8_stage_ta/ -> async_trans/cgweb/fe_agent/monkey_kk/pm
+* 10.47.182.119/139.196.205.202（ta-stage-log）
+servers/tomcat8_stage_paynotify/ -> paynotify
+servers/tomcat8_stage_ta/ -> async_trans/cgweb/fe_agent/monkey_kk/pm
 
 
 
 > Test
-### 10.46.27.37/139.196.108.39（GHLM测试和生产中台）
-### servers/tomcat8_test/ -> async_trans/cgweb/fe_agent/monkey_kk/paynotify/pm
+* 10.46.27.37/139.196.108.39（GHLM测试和生产中台）
+servers/tomcat8_test/ -> async_trans/cgweb/fe_agent/monkey_kk/paynotify/pm
 
 ------
 
